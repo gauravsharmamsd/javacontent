@@ -1,0 +1,55 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class FileMonitor {
+	static Scanner sc =new Scanner(System.in);
+	public static void main(String[] args) throws Exception {
+		//Every 30 seconds check if files have arrived
+		
+		List<Customer> al=new ArrayList<Customer>();
+		JAXBXMLHandler j=new JAXBXMLHandler();
+		while(true) {
+		System.out.println("Enter pin");
+		int pin=sc.nextInt();
+		System.out.println("Enter city");
+		String city =sc.next();
+		Address add1=new Address(pin,city);
+		System.out.println("Enter name");
+		String name=sc.next();
+		System.out.println("Enter order value");
+		int order_val=sc.nextInt();
+				Customer c1=new Customer(name,add1,order_val);
+		al.add(c1);
+	  	WriteFile.writeFile(al);
+		ReadFile.readFile("File.txt");
+		JAXBXMLHandler.marshal(c1);
+		System.out.println("prss y ?n to add  more");
+		String y=sc.next();
+		if(y.equals("n")) {
+			break;
+		
+		}
+
+	}
+
+		WriteFile.writeFile(al);
+		ReadFile.readFile("FileMane.txt");
+		while(true) {
+			System.out.println("checking if new files have arrived ...");
+			File[] files = new File("C:\\collections assignment\\Exhibitor Monitor Project").listFiles();
+			//Spawn a Reader Thread which validates the file
+			
+			try {
+				Thread.sleep(30000);
+				
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

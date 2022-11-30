@@ -1,0 +1,16 @@
+//abstract parent class
+abstract class Overload{
+   //abstract method
+   public abstract void sound();
+}
+//Dog class extends Animal class
+public class Dog extends Overload{
+
+   public void sound(){
+	System.out.println("Woof");
+   }
+   public static void main(String args[]){
+	Overload obj = new Dog();
+	obj.sound();
+   }
+}

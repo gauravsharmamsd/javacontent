@@ -1,0 +1,47 @@
+package Bank;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Account {
+	static Connection con=ConnectionCreater.createConnection();
+    static PreparedStatement ps=null;
+
+public static boolean InsertStudentToDB(Customer cust) throws SQLException {
+	 boolean flag=false;
+	
+	String q="insert into Banks(firstname,lastname,balance,city)values(?,?,?,?)";
+	 ps=con.prepareStatement(q);
+	ps.setString(1, cust.getFirstname());
+	ps.setString(2, cust.getLastname());
+	ps.setInt(3, cust.getBalance());
+	ps.setString(4, cust.getCity());
+	ps.executeUpdate();
+	flag=true;
+	return flag;
+	
+}
+
+public static boolean checkIntAccno(int accno) throws SQLException {
+	 boolean flag1=false;
+	String q ="SELECT Time FROM Banks WHERE Bankid LIKE 'accno%'";
+
+	Statement stmt =con.createStatement();
+	ResultSet set=stmt.executeQuery(q);
+	while(set.next()) {
+		if()
+	}
+	
+	flag1=true;
+	return flag1;
+	
+	
+     
+ }
+}
+		
+
+

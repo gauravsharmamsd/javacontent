@@ -1,0 +1,18 @@
+
+public class Account {
+private String acname;
+private int initAmount;
+public String getAcname() {
+	return acname;
+}
+public void setAcname(String acname) {
+	this.acname = acname;
+}
+public int getInitAmount() {
+	return initAmount;
+}
+public void setInitAmount(int initAmount) {
+	this.initAmount = initAmount;
+}
+
+}

@@ -1,0 +1,13 @@
+package com.ss;
+ 
+
+public class Testt2 {
+	static int m1( int a,int b) {
+		 int c=a+b;
+		 return c;
+	 }
+public static void main (String args[]) {
+	int y=Testt2.m1(10,20);
+	System.out.println(Testt2.m1(10,30));
+}
+}

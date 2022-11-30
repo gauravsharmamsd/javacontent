@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Reverse {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("enter thr string");
+		String s=sc.nextLine();
+		int i=s.length()-1;
+		int k=0;
+		while(i>=0) {
+			int j=i;
+			while(s.charAt(j)!=' ' && j>0) {
+				j--;
+				if(j==0)
+					 k=0;
+				else k=j+1;
+				while(k<=i) {
+				System.out.print(s.charAt(k));
+			k++;
+			}
+			System.out.print(" ");
+			i=j-1;
+		}
+				
+		}
+	}
+}
+		

@@ -1,0 +1,23 @@
+
+public class Bank {
+	Account[] account=new Account[10];
+static int z;
+	public void openAccount(int amount, String name) {
+		Account ac=new Account();
+		int AccountNo =z+1;
+		ac.setAcname(name);
+		ac.setInitAmount(amount);
+		ac.setAccountNo(AccountNo);
+			account[z+1]=ac;
+			System.out.println(ac);
+		printDetails(account);
+	}
+	private void printDetails(Account[] account2) {
+		for(Account ax: account) {
+			System.out.println(ax);
+		
+	}
+	
+	}
+
+}

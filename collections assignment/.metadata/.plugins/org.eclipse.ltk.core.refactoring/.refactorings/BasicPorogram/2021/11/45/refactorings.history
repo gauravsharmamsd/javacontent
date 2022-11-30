@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;avc.aa.gcd&apos; to &apos;gcd_lcm&apos;&#x0D;&#x0A;- Original project: &apos;BasicPorogram&apos;&#x0D;&#x0A;- Original element: &apos;avc.aa.gcd&apos;&#x0D;&#x0A;- Renamed element: &apos;avc.aa.gcd_lcm&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;gcd&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;avc.aa{gcd.java[gcd" matchStrategy="1" name="gcd_lcm" qualified="false" references="true" similarDeclarations="false" stamp="1635837947070" textual="false" version="1.0"/>
+</session>

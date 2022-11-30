@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class UI {
+	static Bank b=new Bank();
+static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		displayMenu();
+	}
+	private static void displayMenu() {
+			System.out.println("choice!!!");
+				
+		while(true) {
+		int x=sc.nextInt();
+			switch(x) {
+			case 1:
+				System.out.println("enetr some ammount");
+				int amt =sc.nextInt();
+				System.out.println("entr the name");
+				String Accname=sc.next();
+				b.openAccount(amt,Accname);
+				break;
+			case 2:
+				int accNo=sc.nextInt();
+				int pos=b.search(accNo);
+			//	System.out.println("Accound found posn    "+pos   +"at this posn");
+				break;
+			case 3:
+				System.out.println("enetr the account to be deleted");
+				int accNo1=sc.nextInt();
+				b.closeAccount(accNo1);
+				
+			case 4:
+				b.printAccount();
+				break;
+						}
+		
+		}
+	}
+
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+<listOfFiles>
+<file>
+	<filename>A.txt</filename>
+	<timeToArrive>12:30</timeToArrive>
+	<outfileName>aout.txt</outfileName>
+	<format>
+		<field>
+			<name>customername</name>
+			<maxlength>80</maxlength>
+			<minlength>10</minlength>
+			<optional>true</optional>
+		</field>
+		<field>
+			<name>address</name>
+			<maxlength>80</maxlength>
+			<minlength>10</minlength>
+			<optional>true</optional>
+		</field>
+		<field>
+			<name>ordervalue</name>
+			<maxlength>80</maxlength>
+			<minlength>10</minlength>
+			<optional>false</optional>
+		</field>
+		
+	</format>
+</file>
+<file>
+	<filename>B.txt</filename>
+	<timeToArrive>12:30</timeToArrive>
+	<outfileName>aout.txt</outfileName>
+	<format>
+		<field>
+			<name>customername</name>
+			<maxlength>80</maxlength>
+			<minlength>10</minlength>
+			<optional>true</optional>
+		</field>
+		<field>
+			<name>address</name>
+			<maxlength>80</maxlength>
+			<minlength>10</minlength>
+			<optional>true</optional>
+		</field>
+		<field>
+			<name>ordervalue</name>
+			<maxlength>80</maxlength>
+			<minlength>10</minlength>
+			<optional>false</optional>
+		</field>
+		
+	</format>
+</file>
+</listOfFiles>
+</files>

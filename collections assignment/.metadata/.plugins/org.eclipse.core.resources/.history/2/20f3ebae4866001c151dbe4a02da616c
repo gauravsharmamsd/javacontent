@@ -1,0 +1,57 @@
+
+public class Bank {
+	private String BankName;
+	private String BranchCode;
+	private Account[] account = new Account[100];
+	static Account ac;
+	static int op;
+	
+	//Open Account
+	public int openAccount(int amt,String name)  {
+		
+
+		int accno=op+1;
+		Account a = new Account(name,accno,amt);
+		account[op++] = a;
+		System.out.println(a);
+		return 1;
+		
+	}
+
+	public void printAccount() {
+		
+		for(int i=0;i<op;i++) {
+			
+			System.out.println(account[i]);
+		}
+		
+	}
+
+	
+
+	public int search(int accNo) {
+				for(int i=0;i<account.length;i++){
+			if(accNo==account[i].getAccno()) {
+				return i;
+			}
+				
+					}
+		return -1;
+	
+		
+		
+	}
+
+	public void closeAccount(int accNo) {
+		int index=search(accNo);
+		for(int i=index;i<op;i++) {
+		account[i+1]=account[i];
+		}
+		op=op-1;
+	}
+	
+
+	
+}
+
+

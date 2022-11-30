@@ -1,0 +1,45 @@
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+
+public class Mediar implements A {
+
+
+   private A tt;
+     public Mediar(A tt){
+    	
+    	 this.tt = tt;//This could be HDFC or SBI or any other Bank
+     }
+     
+	@Override
+	public  void xy()  {
+		Class c = tt.getClass();
+//		System.out.println("___________"+c.getName());
+//		
+//		 for (Method method : c.getDeclaredMethods()) {
+//             if (method.getName().equals("xy")) {
+//             System.out.println("Method fooBar exists.");
+//             Annotation annotation=   method .getDeclaredAnnotation(hideAndSeek.class);
+//
+//			if(annotation != null) {
+//				System.out.println("Entering method withdraw of "+tt.getClass().getName());
+//				tt.xy();
+//			}
+//         }
+//     }
+//		// method.getDe
+
+		try {
+			Annotation annotation = c.getDeclaredMethod("xy", int.class).getDeclaredAnnotation(hideAndSeek.class);
+
+			if(annotation != null) {
+				System.out.println("Entering method withdraw of "+tt.getClass().getName());
+			}
+			tt.xy();
+		} catch (NoSuchMethodException | SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

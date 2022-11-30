@@ -1,0 +1,11 @@
+package arraylist;
+
+public class Laptoop {
+	public static void main(String args[]) {
+		int a=8;
+		int b=0;
+		System.out.print(a/b);
+				
+	}
+
+}

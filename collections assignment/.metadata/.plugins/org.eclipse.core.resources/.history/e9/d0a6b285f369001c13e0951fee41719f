@@ -1,0 +1,9 @@
+public class Cricket implements Sports{
+
+	@Override
+	public void Play() {
+		System.out.println("Virat vs  Rohit");
+		
+	}
+
+}

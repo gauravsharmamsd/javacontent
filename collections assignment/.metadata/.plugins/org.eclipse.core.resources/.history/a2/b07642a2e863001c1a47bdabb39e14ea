@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+import Day1.Student;
+
+public class One {
+	static Scanner sc=new Scanner(System.in);
+	static Employee[]e=new Employee[5];
+	static int count;
+	static Employee emp= new Employee();
+//	static Employee emp1= new Employee();
+	
+public static void main(String args[]) {
+
+	//private static void createStudentsWithUserInput() {
+//		System.out.println("No of Students ?");
+//		int no = sc.nextInt();
+
+		
+		for(int i=0; i<2; i++) {
+			Employee s1 = new Employee();
+			System.out.println("Enter First Name");
+			String fname = sc.next();
+			s1.setEname(fname);
+			System.out.println("Enter Last Name");
+			String lname = sc.next();
+			s1.setCity(lname);
+			System.out.println("Enter Age");
+			int age= sc.nextInt();		
+			s1.setEid(age);
+			System.out.println("Enter City");
+		
+			e[i] = s1;
+		}
+		printStudents(e);
+
+	}
+
+	private static void printStudents(Employee[] students) {
+		for(Employee s: students) {
+			System.out.println(s);
+		}
+
+	}
+
+
+private static void printStudentDetails(Employee[] e2) {
+	for(Employee e:e2)
+		System.out.println(e.getEid());
+}
+	// TODO Auto-generated method stub
+	
+}

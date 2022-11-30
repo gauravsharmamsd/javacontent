@@ -1,0 +1,14 @@
+
+public class Bank {
+	Account[] account=new Account[10];
+
+	public void openAccount(int amount, String name) {
+		Account ac=new Account();
+		
+		ac.setAcname(name);
+		ac.setInitAmount(amount);
+		System.out.println("name--->"+ac.getAcname()+"  Balance--->  "+ac.getInitAmount());
+		
+	}
+
+}

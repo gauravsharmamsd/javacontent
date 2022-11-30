@@ -1,0 +1,24 @@
+import javax.xml.bind.JAXBException;
+
+public class Main {
+
+	public static void main(String[] args) throws JAXBException {
+Student s=new Student();
+Address add=new Address();
+add.setCity("Dhaulana");
+add.setPin(245301);
+add.setState("UP");
+
+s.setSid(21);
+s.setSname("Mahhi");
+s.setSxp(12);
+s.setAdd(add);
+
+System.out.println(s);
+
+JAX.createMarsheller(s);
+JAX.unmarshal();
+System.out.println(JAX.unmarshal(););
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+	List al=new ArrayList();
+	al.add(5);
+	al.add("Mahhi");
+	al.add("Virat");
+	al.add("Mahhi");
+	
+	Writerthread tw=new Writerthread(al);
+    Thread t1=new Thread(tw);
+    t1.start();
+   Readerthread tr=new Readerthread(al);
+    Thread t2=new Thread(tr);
+    t2.start();
+	}
+
+}

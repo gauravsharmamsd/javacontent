@@ -1,0 +1,14 @@
+
+public class Ex1y {
+
+	public static void main(String[] args) {
+	int a=5;
+	try {
+	System.out.println(a/0);
+		// TODO Auto-generated method stub
+
+	}
+	catch(ArithmeticException ae) {
+		System.out.println(a/1);
+}
+}}

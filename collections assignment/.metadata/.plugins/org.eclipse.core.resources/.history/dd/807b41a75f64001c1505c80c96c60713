@@ -1,0 +1,29 @@
+
+public class Employee {
+	private String ename;
+	private String city;
+	private int eid;
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public int getEid() {
+		return eid;
+	}
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+	@Override
+	public String toString() {
+		return "Employee [ename=" + ename + ", city=" + city + ", eid=" + eid + "]";
+	}
+
+}

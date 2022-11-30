@@ -1,0 +1,13 @@
+
+public class Bank {
+Account ac[]=new Account[5];
+static int z;
+public void openAccount(int accid, String name, String city) {
+	int AccNo=z+1;
+	Account acp =new Account(AccNo,accid,name,city);
+	ac[z+1]=acp;
+	System.out.println(acp);
+	
+}
+
+}

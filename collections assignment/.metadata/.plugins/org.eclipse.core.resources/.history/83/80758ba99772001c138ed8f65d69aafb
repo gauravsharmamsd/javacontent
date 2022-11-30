@@ -1,0 +1,24 @@
+package Copy;
+
+import java.util.Set;
+
+public class Display {
+	static Scheduler s=new Scheduler();
+    static UserInput u=new UserInput();
+    static Main m=new Main();
+ 
+	while (true) {
+		System.out.println("Enter 1 to display game");
+		int a =u.getInt();
+		switch(a) {
+		
+		case 1:showGame();
+		//System.out.println("Details as   "+s.game);
+		break;
+		default : System.out.println("Such not a no");
+		}
+	}
+	public void showGame() {
+		System.out.println("Details as   "+s.game);
+	}
+}}

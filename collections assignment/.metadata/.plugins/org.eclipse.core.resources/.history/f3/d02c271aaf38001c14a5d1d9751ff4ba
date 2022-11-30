@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Reverse {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+			System.out.println("enter thr string");
+		String s=sc.nextLine();
+		String s1="  ";
+		for(int i=s.length()-1;i>=0;i--) {
+			int j=i;
+			while(j!=' ') {
+				j--;
+			}
+			int k=j;
+			for(k=j;k<s.length();k++) {
+				s1=s1+s.charAt(k);
+			}
+				System.out.println(k);
+				i=j-1;
+				
+		}
+		
+		
+	}
+}

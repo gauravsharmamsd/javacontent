@@ -1,0 +1,28 @@
+
+public class Employee {
+
+	 private int sid;
+	private String sname;
+	public void setSid(int sid)
+	{ this.sid=sid;
+	}
+	public void setSname(String sname)
+	{ this.sname="sname";
+	}
+	public int getSid() {
+		return sid;
+	}
+	public String getSname() {
+		return sname;
+	}
+
+//public class Empoyee {
+	
+	 public static void main(String[] args)
+	{ Employee e=new Employee();
+	e.setSid(100);
+	e.setSname("ratan");
+	System.out.println(e.getSid());
+	System.out.println(e.getSname());
+	}
+}

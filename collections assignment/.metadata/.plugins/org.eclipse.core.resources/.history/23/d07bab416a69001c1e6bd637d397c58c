@@ -1,0 +1,15 @@
+package Self;
+
+import Exitlog;
+
+public class X {
+@Exitlog
+public void run() {
+	System.out.println("All is run");
+}
+@Exitlog
+public void fly() {
+	System.out.println("All is Flying");
+}
+
+}

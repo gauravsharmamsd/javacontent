@@ -1,0 +1,12 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		InterFaceForLambda iz=(int i,int j,String s)->{
+			System.out.println(i+"  "+j+" "+s);
+	};
+	
+iz.m1(5, 6, "Babae");
+}
+
+}	

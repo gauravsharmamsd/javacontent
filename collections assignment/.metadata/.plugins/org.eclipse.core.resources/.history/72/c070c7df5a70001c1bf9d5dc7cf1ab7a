@@ -1,0 +1,58 @@
+package schedular;
+
+public class Game {
+	private String gameName;
+	private int noOfPlayers;
+	
+	Game(){
+	}
+	
+                
+	public Game(String gameName, int noOfPlayers) {
+		this.gameName = gameName;
+		this.noOfPlayers = noOfPlayers;
+	}
+
+	@Override
+	public String toString() {
+		return "Game [gameName=" + gameName + ", noOfPlayers=" + noOfPlayers + "]";
+	}
+
+
+	public String getGameName() {
+		return gameName;
+	}
+	
+	public void setGameName(String gameName) {
+		this.gameName = gameName;
+	}
+	
+	public int getNoOfPlayers() {
+		return noOfPlayers;
+	}
+
+	public void setNoOfPlayers(int noOfPlayers) {
+		this.noOfPlayers = noOfPlayers;
+	}
+	
+	@Override
+	public boolean equals(Object o){
+		Game g = (Game)o;
+		if(g.gameName.equals(this.gameName)) {
+			if(g.noOfPlayers==this.noOfPlayers) {
+				return true;
+				}
+			return true;
+		}
+	
+			return false;
+		
+		//return (g.gameName.equals(this.gameName) );
+	}
+	@Override
+	public int hashCode() {
+		return this.gameName.hashCode();
+		
+	}
+
+}

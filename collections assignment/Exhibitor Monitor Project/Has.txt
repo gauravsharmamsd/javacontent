@@ -1,0 +1,1 @@
+Customer [name=Harshit, add=Address [pin=111, city=Dholana], order_value=44, file=Has.txt]

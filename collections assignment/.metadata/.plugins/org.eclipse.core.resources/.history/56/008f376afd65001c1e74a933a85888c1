@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class UI {
+	static Bank b=new Bank();
+static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.println("choice!!!");
+		int x=sc.nextInt();
+		while(true) {
+			switch(x) {
+			case 1:
+				int amt =sc.nextInt();
+				String Accname=sc.next();
+				b.openAccount(amt,Accname);
+				
+				break;
+						}
+		}
+
+	}
+
+}

@@ -1,0 +1,26 @@
+
+public class daemonThread extends Thread{
+	
+	public void run() {
+	  if(Thread.currentThread().isDaemon()){
+	
+		System.out.println("Daemon Thread");
+	}
+	else {
+		System.out.println("Parent Thread");
+	}
+	  }
+	public static void main(String[] args) {
+//		daemonThread d= new daemonThread();
+	//	d.start();
+		daemonThread daemon= new daemonThread();
+		daemon.setDaemon(true);
+	//	d.start();
+		daemon.start();
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+	

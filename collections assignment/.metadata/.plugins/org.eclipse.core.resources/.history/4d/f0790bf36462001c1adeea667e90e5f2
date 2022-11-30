@@ -1,0 +1,98 @@
+import java.util.Scanner;
+
+public class Account {
+	private static Scanner sc=new Scanner(System.in);
+	private String Acname;
+	private int Acid;
+	private int balance;
+	private int PreviousTransaction;
+	
+	public Account(String acname, int acid, int balance, int previousTransaction) {
+		super();
+		this.Acname = acname;
+		this.Acid = acid;
+		this.balance = balance;
+		this.PreviousTransaction = previousTransaction;
+	}
+	
+	
+
+	public Account(String string, int i) {
+		string =sc.next();
+		i=sc.nextInt();
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getAcname() {
+		return Acname;
+	}
+
+	public void setAcname(String acname) {
+		this.Acname=acname;
+		 Acname=sc.next();
+	//	 System.out.println(acname);
+	//	 Acname=acname;
+	}
+
+	public int getAcid() {
+		return Acid;
+	}
+
+	public void setAcid(int acid) {
+		Acid = acid;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	public void setPreviousTransaction(int previousTransaction) {
+		PreviousTransaction = previousTransaction;
+	}
+
+	void deposit(int Deposit) {
+		if(Deposit!=0) {
+			balance=balance+Deposit;
+			PreviousTransaction=Deposit;
+			//System.out.println(getBalance()+" "+PreviousTransaction);
+		}
+	}
+	void Withdrawl(int Required) {
+		if(getBalance()>=Required) {
+			balance=balance-Required;
+			PreviousTransaction=-Required;
+		//	System.out.println(getBalance()+" "+PreviousTransaction);
+		}
+	}
+	void getPreviousTransaction() {
+		if(PreviousTransaction>0) {
+			System.out.println("PreviousTRaansaction amount is"+ PreviousTransaction);
+		}
+		else if(PreviousTransaction<0) {
+			System.out.println("Withdrawl amount is"+ Math.abs( PreviousTransaction));
+		}
+		else {
+			System.out.println("No TransactionOccured");
+		}
+		
+	}
+	
+	
+	
+}
+	
+	
+	
+	
+	
+
+
+
+
+	
+
+

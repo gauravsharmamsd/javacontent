@@ -1,0 +1,19 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Test1 t=new Test1();
+		t.m1(5, 6, "Babar");
+
+	}
+
+}
+class Test1 implements InterFaceForLambda{
+
+	@Override
+	public void m1(int i, int j, String s) {
+		System.out.println(i+" "+j+"  "+s);
+		
+	}
+	
+}

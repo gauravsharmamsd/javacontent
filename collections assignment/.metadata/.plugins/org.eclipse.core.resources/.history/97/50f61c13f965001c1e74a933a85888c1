@@ -1,0 +1,39 @@
+
+public class Account {
+private String name;
+private String city ;
+private int id;
+private int accNo;
+public Account(int accNo, int accid, String name2, String city2) {
+	this.accNo=accNo;
+	this.id=accid;
+	this.city=city2;
+	this.name=name2;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getCity() {
+	return city;
+}
+public void setCity(String city) {
+	this.city = city;
+}
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public Account(String name, String city, int id, int accNo) {
+	super();
+	this.name = name;
+	this.city = city;
+	this.id = id;
+	this.accNo = accNo;
+}
+
+}

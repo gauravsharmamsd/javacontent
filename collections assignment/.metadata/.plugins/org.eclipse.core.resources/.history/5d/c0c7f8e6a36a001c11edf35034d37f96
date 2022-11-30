@@ -1,0 +1,9 @@
+
+public class X implements A{
+	@Override
+	public void xy() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

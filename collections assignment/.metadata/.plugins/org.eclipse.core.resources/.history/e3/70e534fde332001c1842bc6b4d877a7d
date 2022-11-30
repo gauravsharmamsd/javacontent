@@ -1,0 +1,12 @@
+abstract class a{
+	abstract void run();
+}
+class b extends a{
+	void run() {
+		System.out.println("hhgvjh");
+	}
+public static void main(String args[]){  
+b d=new b();  
+d.run();  
+}}  	
+	

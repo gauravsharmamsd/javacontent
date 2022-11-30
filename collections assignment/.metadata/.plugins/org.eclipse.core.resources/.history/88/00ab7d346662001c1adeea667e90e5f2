@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Bank {
+private String bname;
+private Account arr[];
+private int BranchCode;
+private static Scanner sc =new Scanner(System.in);
+public static void showMenu() {
+	System.out.println("Welcome");
+	System.out.println("A:open Account");
+	System.out.println("B:closeAccount");
+	System.out.println("B:Deposit");
+	System.out.println("C:withdraw");
+	System.out.println("E:PrintAccountDetails");
+	System.out.println("F.Exit");
+	char ch;
+do{
+	System.out.println("Enetr the option");
+ch=sc.next().charAt(0);
+switch(ch) {
+case 'A':
+System.out.println("Account set to be open");
+break;
+case 'B':
+System.out.println("Account set to be closed");
+break;
+
+case 'C':
+System.out.println("Bakance to be deposit");
+int amount=sc.nextInt();
+ac.deposit(amount);
+break;
+
+case 'D':
+System.out.println("Bakanceto be withdrawn");
+int amount2=sc.nextInt();
+ac.Withdrawl(amount2);
+break;
+case 'E':
+System.out.println("Account details");
+break;
+default : System.out.println("wrong");
+break;
+}
+}
+while(ch!='E');
+System.out.println("thamks");
+}
+}
+}

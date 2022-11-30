@@ -1,0 +1,21 @@
+class Animal{  
+String color="white";  
+int n=0;
+}  
+class Dog extends Animal{  
+String color="black";  
+int n=8;
+void printColor(){  
+System.out.println(color);//prints color of Dog class  
+System.out.println(n);
+
+System.out.println(super.n);
+System.out.println(super.color);//prints color of Animal class  
+}  
+}  
+class Overload{  
+public static void main(String args[]){  
+Dog d=new Dog();  
+d.printColor();  
+}}  	
+	

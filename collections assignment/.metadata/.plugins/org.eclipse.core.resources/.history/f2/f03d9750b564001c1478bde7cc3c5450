@@ -1,0 +1,30 @@
+
+public class Account {
+private String acname;
+private int initAmount;
+public String getAcname() {
+	return acname;
+}
+public void setAcname(String acname) {
+	this.acname = acname;
+}
+public int getInitAmount() {
+	return initAmount;
+}
+public void setInitAmount(int initAmount) {
+	this.initAmount = initAmount;
+}
+public int getAccountNo() {
+	return initAmount;
+}
+public void setAccountNo(int AccountNo) {
+	this.initAmount = initAmount;
+}
+public Account(String acname, int initAmount) {
+	super();
+	this.acname = acname;
+	this.initAmount = initAmount;
+}
+
+
+}

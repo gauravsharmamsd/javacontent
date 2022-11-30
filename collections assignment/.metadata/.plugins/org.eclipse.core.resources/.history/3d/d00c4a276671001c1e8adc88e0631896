@@ -1,0 +1,37 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+
+public class Writerthread implements Runnable{
+   List al;
+	public Writerthread(List al) {
+		this.al=al;
+	}
+
+	@Override
+	public void run() {
+		FileWriter writer = null;
+		try {
+			writer = new FileWriter("output.txt");
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} 
+		for(Object str: al) {
+		  try {
+			writer.write(str + System.lineSeparator());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		}
+		try {
+			writer.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

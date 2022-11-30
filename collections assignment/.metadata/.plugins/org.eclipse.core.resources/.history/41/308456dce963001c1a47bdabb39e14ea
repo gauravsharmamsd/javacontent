@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+import Day1.Student;
+
+public class One {
+	static Scanner sc=new Scanner(System.in);
+	static Employee[]e=new Employee[3];
+	static int count;
+	static Employee emp= new Employee();
+//	static Employee emp1= new Employee();
+	
+public static void main(String args[]) {
+int x=sc.nextInt();
+for(int i=0;i<x;i++) {
+	
+System.out.println("Enetr the name");
+	String sname=sc.next();
+	emp.setEname(sname);
+	String city=sc.next();
+	emp.setCity(city);
+	int xe=sc.nextInt();
+	emp.setEid(xe);
+	e[i]=emp;
+	
+}
+printStu(e);
+
+
+}
+private static void printStu(Employee[] e2) {
+	for(Employee e:e2)
+		System.out.println(e);
+	// TODO Auto-generated method stub
+	
+}}

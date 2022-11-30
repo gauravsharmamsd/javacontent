@@ -1,0 +1,25 @@
+package com.dss;
+
+public class CharPattern37 {
+
+	public static void main(String[] args) {
+		char ch ='F';
+		for(int i=0;i<=5;i++) {
+			for(int j=0;j<=5;j++) {
+				if(j==i) {
+					ch=(char) (ch-1);
+			//	i--;
+		
+			
+		}
+				else 
+				System.out.print(ch);
+			}
+			
+			System.out.println(" ");
+		// TODO Auto-generated method stub
+
+	}
+
+	}
+}

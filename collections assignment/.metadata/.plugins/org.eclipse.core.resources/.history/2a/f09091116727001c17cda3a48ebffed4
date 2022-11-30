@@ -1,0 +1,14 @@
+package com.ss;
+
+public class Test1 {
+int i;
+static void m( int i) {
+	System.out.println(i);
+}
+public static void main(String args[]) {
+//Test t=new 	Test();
+Test1.m(10);
+}
+}
+
+

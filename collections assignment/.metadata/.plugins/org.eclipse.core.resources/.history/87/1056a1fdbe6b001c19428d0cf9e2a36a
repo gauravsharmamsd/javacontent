@@ -1,0 +1,21 @@
+
+public class Main {
+static Student[] s1=new Student[5];
+	public static void main(String[] args) {
+Student s=new Student();
+Address add=new Address();
+add.setCity("Dhaulana");
+add.setPin(245301);
+add.setState("UP");
+
+s.setSid(21);
+s.setSname("Mahhi");
+s.setSxp(12);
+s.setAdd(add);
+s1[0]=s;
+for(Student stud:s1)
+System.out.println(stud);
+
+	}
+
+}

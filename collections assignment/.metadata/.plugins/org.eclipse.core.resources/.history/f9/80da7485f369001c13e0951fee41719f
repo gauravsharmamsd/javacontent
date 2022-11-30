@@ -1,0 +1,21 @@
+
+
+public class SportFactory {
+
+
+		public static Sports getObject(String className) {
+			try {
+				Sports bank = (Sports)Class.forName(className).newInstance();
+				System.out.println(bank.getClass().getName());
+				System.out.println();
+				Coach logger = new Coach(bank);
+			
+				return logger;
+			} catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return null;
+		}
+
+	}

@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Max2 {
+//	static int max2(int arr[]) {
+//		int max=arr[0];
+//		int max2=arr[0];
+//		for(int i=0;i<5;i++) {
+//		if(arr[i]>=max) {
+//			max2=max;
+//			max =arr[i];
+//		}
+//		else if (arr[i]>=max2) {
+//				
+//				max2=arr[i];
+//			
+//		}
+//		
+//	}
+//		return max2;
+//	}
+//	
+		static int min2(int arr[]) {
+			
+			
+			  for(int i = 0; i<arr.length; i++ ){
+			         for(int j = i+1; j<arr.length; j++){
+			            if(arr[i]>arr[j]){
+			             int   temp = arr[i];
+			               arr[i] = arr[j];
+			               arr[j] = temp;
+			            }
+			         }
+			      
+		
+		}
+			 System.out.println(" the sec largest element is");
+			return arr[arr.length-2];
+		}
+	
+	public static void main(String args[]) {
+		Scanner sc =new Scanner (System.in);
+		int n=sc.nextInt();
+		int arr[]=new int[n];
+		for(int i=0;i<n;i++) {
+			arr[i]=sc.nextInt();
+		}
+		min2(arr);
+		//max(arr);
+		System.out.println( min2(arr));
+	
+	}
+
+}

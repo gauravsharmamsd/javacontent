@@ -1,0 +1,3 @@
+xxxx,city1 state1,10000
+yyyy,city2 state2,20000
+zzzz,city3 state3,30000

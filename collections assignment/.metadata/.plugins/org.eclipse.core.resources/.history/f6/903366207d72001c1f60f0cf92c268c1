@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Storage {
+
+	public void addGames() {
+		Set<Game> set=new HashSet<Game>();
+		set.add(new Game("Cricket",1));
+		set.add(new Game("Hockey",4));
+		set.add(new Game("Cricket",5));
+		
+      	List<Game>al=new ArrayList<Game>(set);
+	System.out.println(al);
+	System.out.println(al.contains(new Game("Crihcket",58)));
+
+}
+	}
+
+

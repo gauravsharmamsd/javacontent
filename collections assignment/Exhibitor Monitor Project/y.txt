@@ -1,0 +1,1 @@
+Customer [name=t, add=Address [pin=5, city=gh], order_value=8, file=y.txt]

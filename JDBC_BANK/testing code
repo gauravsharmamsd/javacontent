@@ -1,0 +1,80 @@
+@Test
+	void testOpenAccountWithCorrectIn() throws Exception {
+		Bank bank=new Bank();
+		int acno=bank.openAccount("Akki", 1200);
+		assertEquals(1, acno);
+	}
+	
+	@Test
+	void testOpemAcountForInsufficientAmmount(){
+		Bank bank=new Bank();
+		assertThrows(InsufficientAmountException.class,()-> bank.openAccount("Ak", 100));
+	}
+	//-------------------------------------------------------------
+	//*******ForCloseAccount********
+	@Test
+	void testCloseAccountInvalidAccountException()  {
+		Bank bank=new Bank();
+		assertThrows(InvalidAccountException.class,()-> bank.closeAccount(5));
+	}
+	@Test
+	void testCloseAccountWillWorkTest() throws Exception  {
+		Bank bank=new Bank();
+		int accno=bank.openAccount("Shan", 2500);
+		bank.closeAccount(accno);
+		assertThrows(InvalidAccountException.class,()-> bank.closeAccount(accno));
+	}
+	
+	//-------------------------------------------------------------
+	//*******AccountDetails********
+	@Test
+	void testAccountDetailsForCorrectInfo() throws Exception {
+		Bank bank=new Bank();
+		int acno=bank.openAccount("akkit", 1200);
+		ResultSet account=bank.accountDetails(acno);
+		assertEquals(acno, account.getInt("accno"));
+		assertEquals("akkit", account.getString("name"));
+		assertEquals(1200, account.getInt("balance"));
+	}
+	
+	@Test
+	void testAccountDetailsForException() {
+		Bank bank=new Bank();
+		assertThrows(InvalidAccountException.class,()-> bank.accountDetails(150));
+	}
+	//-------------------------------------------------------------
+	//*******ForDepositAmmount********
+	@Test
+	void testDeposit() throws Exception {
+		Bank bank=new Bank();
+		int accno=bank.openAccount("akkit", 1200);
+		assertEquals(1200+400, bank.deposit(accno, 400));
+	}
+	
+	@Test
+	void testDepositInvalidAccountException(){
+		Bank bank=new Bank();
+		assertThrows(InvalidAccountException.class,()-> bank.deposit(157, 1250));
+	}
+	//-------------------------------------------------------------
+	//*******ForWithdraw********
+	@Test
+	void testWithdraw() throws Exception {
+		Bank bank=new Bank();
+		int accno=bank.openAccount("akkit", 1200);
+		assertEquals(1000, bank.withdraw(accno, 200));
+	}
+	
+	@Test
+	void testWithdrawInsufficientAmountException() throws Exception {
+		Bank bank=new Bank();
+		int accno=bank.openAccount("Simran", 1100);
+		assertThrows(InsufficientAmountException.class,()-> bank.withdraw(accno, 1250));
+	}
+	
+	@Test
+	void testWithdrawInvalidAccountException() {
+		Bank bank=new Bank();
+		assertThrows(InvalidAccountException.class,()-> bank.withdraw(2530, 1250));
+	}
+	//--------------------

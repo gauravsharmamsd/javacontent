@@ -1,0 +1,38 @@
+package arraylist;
+import java.util.Scanner;
+public class method {
+	
+	
+	int add(int a,int b) {
+	int c=a+b;
+	return c;
+	
+	}
+	static String Name(String gaurav,String nidhi) {
+		if(gaurav.equals(nidhi)) {
+			return "success";
+		}else {
+			return "fail";
+		}
+		
+	}
+	public static void main(String[]args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.println("enter the two num");
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		String y=sc.nextLine();
+		String z=sc.nextLine();
+		method m=new method();
+		int addn=m.add(a,b) ;
+		System.out.println( addn);
+	
+	String s=method.Name(y,z);
+	System.out.println( s);
+	
+		}
+		
+		
+	}
+
+

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class A{
+	String s=" awdjl";
+}
+class B extends A{
+	String s=" abscd";
+	
+	 public void run(){
+		System.out.println(s);
+		System.out.println(super.s);	
+	}
+}
+	
+	public class Overload {
+	public static void main(String[] args) {
+		B n= new B();
+		n.run();
+	}
+
+}
+
+	
+	
+	

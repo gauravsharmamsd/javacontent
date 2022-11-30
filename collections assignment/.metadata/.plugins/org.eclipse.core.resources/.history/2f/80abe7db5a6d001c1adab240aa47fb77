@@ -1,0 +1,10 @@
+
+public interface InterFaceForLambda {
+void m1(int i,int j,String s);
+}
+interface InterFaceForLambda2 {
+void m1(String s);
+}
+interface InterFaceForLambda3 {
+int getInt();
+}

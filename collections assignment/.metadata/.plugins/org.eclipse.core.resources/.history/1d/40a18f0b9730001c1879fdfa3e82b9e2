@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Arry4 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int count =0;
+		System.out.println(" enterr sz");
+		int n=sc.nextInt();
+		int [] arr=new int[n];
+		int [] freq=new int[n];
+		System.out.println(" enterr the element");
+		for(int i=0;i<n;i++) {
+			System.out.println("enter array  el"+ (i+1));
+			arr[i]=sc.nextInt();
+			freq[i]=-1;
+			
+		
+		}
+			for(int i=0;i<n;i++) {
+				
+				for(int j=i+1;j<n;j++) {
+					if(arr[i]==arr[j]) {
+						count++;
+						freq[j]=0;
+					}
+					}
+				if(freq[i]!=0) { 
+					freq[i]=count;
+				}
+				}
+			System.out.println("freq");
+
+					for(int i=0;i<n;i++) {
+						if(freq[i]!=0) {   
+							System.out.print(arr[i] +" "+freq[i]);
+							System.out.println();		
+					
+				}
+				
+			}
+		}
+	
+}

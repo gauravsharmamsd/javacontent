@@ -1,0 +1,8 @@
+
+public class X implements A{
+	@hideAndSeek	@Override
+	public void xy() {
+		System.out.println("X method");
+	}
+
+}

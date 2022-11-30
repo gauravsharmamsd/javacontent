@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+<laptop make ="IBM" model ="Thinkpad" price="45000">
+<order date="123456" qty="100">
+<Expiry time="## 3 yeae"></Expiry>
+</order>
+</laptop>
+<Desktop make ="ABC" model ="xyz" price="35000">
+<order date="124563456" qty="150">
+<Expiry time="## 5yeae"></Expiry>
+</order>
+</Desktop>
+<Chair make ="godrej" price="450">
+<order date="1245" qty="15"></order>
+</Chair>
+</product>

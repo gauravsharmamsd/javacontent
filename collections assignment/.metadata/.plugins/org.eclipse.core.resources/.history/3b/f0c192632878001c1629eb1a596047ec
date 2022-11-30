@@ -1,0 +1,14 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+
+public class WriteFile {
+	public static void writeFile(List<Customer> al) throws IOException{
+		String fileName="C:\\collections assignment\\ExhibitMonitorProject\\File.txt";
+	FileWriter writer = new FileWriter(fileName); 
+	for(Customer str: al) {
+	  writer.write(str + System.lineSeparator());
+	}
+	writer.close();
+}
+}

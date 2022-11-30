@@ -1,0 +1,45 @@
+import bankingProject.Account;
+import bankingProject.InvalidAccountException;
+
+public class Bank {
+Account[] acc=new Account[10];
+static int count;
+	public void openAccount(String acname, int accBal) throws InsufficientAmountException {
+		if(accBal<1000)
+			throw new InsufficientAmountException("account balance >1000");
+		int accno=count+1;
+	Account at=	new Account ();
+	at.setName(acname);
+
+	at.setAccno(accno);
+	at.setBalance(accBal);
+		acc[count++]=at;
+	System.out.println("Congratulation mate ur account has been opened  "+at);
+		
+	}
+	public void closeAccount(int accno) throws InvalidAccountException {
+		int index=search(accno);
+		System.out.println(accno);
+	if(index<0)
+			throw new InvalidAccountException("Soory the req isv not valid");
+	AccountDetails(accno);
+
+	}
+	private int searchAcct(int accno) {
+		for(int i=0;i<count;i++) {
+			if(acc[i] == null) break;
+			if(accno == acc[i].getAccno())
+				return i;
+		}
+		return -1;
+	}
+	public void AccountDetails(int accNo) throws InvalidAccountException {
+		for(Account a :acc) {
+			if(a==null) 
+				throw new InvalidAccountException("Account not found, Please check your account no"); 
+			if(a.getAccno()!=accNo)
+				throw new InvalidAccountException("Account not found, Please check your Account No."); 
+					}
+		System.out.println(acc);
+	}
+}

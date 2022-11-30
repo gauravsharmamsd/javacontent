@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class UI {
+	private static Bank ac=new Bank();
+private static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		showmenu();
+		
+
+	}
+
+	private static void showmenu() {
+		System.out.println("press 1");
+		System.out.println("press 1");
+		System.out.println("press 1");
+		System.out.println("press 1");
+		System.out.println("press 1");
+		while(true) {
+			int x=sc.nextInt();
+			switch(x) {
+			case 1:
+				String username=sc.next();
+				int initailAmount=sc.nextInt();
+				ac.openAcct(initailAmount,username);
+			}
+		}
+
+		
+	}
+
+	
+
+}

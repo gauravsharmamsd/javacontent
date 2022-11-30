@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Bank {
+Account ac[]=new Account[10];
+Scanner sc =new Scanner(System.in);
+static int x;
+	public void openAccount(String name, String amt) {
+		int Accno=x+1;
+		
+		Account a=new Account(name, Accno, Accno);
+		ac[x+1]=a;
+		System.out.println(a);
+		
+	}
+
+}

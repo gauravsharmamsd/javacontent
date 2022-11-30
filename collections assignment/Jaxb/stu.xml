@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student fname="Aklu">
+    <lname>kumar</lname>
+    <age>22</age>
+    <rollNo>11</rollNo>
+    <add>
+        <city>AAAAA</city>
+        <pincode>1</pincode>
+        <state>up</state>
+    </add>
+</student>

@@ -1,0 +1,17 @@
+package Copy;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Scheduler {
+Set<Game>game=new HashSet<Game>();
+
+
+	public void addGame(String gameName, int nop) {
+		Game g=new Game( gameName,nop);
+		game.add(g);
+		System.out.println("Size of set is    :"+game.size());
+		System.out.println("Details as   "+game);
+			}
+
+}

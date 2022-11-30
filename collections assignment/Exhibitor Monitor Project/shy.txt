@@ -1,0 +1,1 @@
+Customer [name=Shahid, add=Address [pin=1111, city=Dasna], order_value=11123, lt=12:30, file=shy.txt]

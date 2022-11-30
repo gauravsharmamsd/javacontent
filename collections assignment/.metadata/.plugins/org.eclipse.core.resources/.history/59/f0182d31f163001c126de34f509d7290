@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class UI {
+	static Bank b=new Bank();
+static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		while(true) {
+			int x=sc.nextInt();
+			switch(x) {
+			case 1:
+				System.out.println("Enter account balance");
+				int accBal=sc.nextInt();
+				System.out.println("Enter name of account holder");
+				String acname=sc.next();
+				try {
+					b.openAccount(acname,accBal);
+				} catch (InsufficientAmountException e) {
+					e.printStackTrace();
+				}
+				
+			}
+		}
+		
+		
+	}
+
+}

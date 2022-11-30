@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class One {
+	static Scanner sc=new Scanner(System.in);
+	static Employee[]e=new Employee[100];
+	static int count;
+	static Employee emp= new Employee();
+	static Employee emp1= new Employee();
+	
+public static void main(String args[]) {
+//	emp.setCity("Gzb");
+//	emp.setEid(10);
+//	emp.setEname(null);
+//	
+//	//e[count+1]=emp;
+//	
+//	emp1.setCity("Gzb");
+//	emp1.setEid(10);
+//	emp1.setEname(null);
+//	
+	//e[count+1]=emp1;
+	for(int i=0;i<5;i++) {
+		int id=sc.nextInt();
+		emp.setEid(id);
+		String ename=sc.next();
+		emp.setEname(ename);
+		String city=sc.next();
+		emp.setEname(city);
+		e[i]=emp;
+		printStudentDetails(e);
+		
+	}
+	
+		
+	
+
+
+private static void printStudentDetails(Employee[] e2) {
+	for(Employee e:e2)
+		System.out.println(e);
+}
+	// TODO Auto-generated method stub
+	
+}

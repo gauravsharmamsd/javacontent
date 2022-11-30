@@ -1,0 +1,42 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+
+public class Readerthread implements Runnable {
+    List al;
+	public Readerthread(List al) {
+	this.al=al;
+	}
+
+	@Override
+	public void run() {
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new FileReader("output.txt"));
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		String line;
+		try {
+			while ((line = reader.readLine()) != null) {
+			    al.add(line);
+			  
+			}
+			  System.out.println(al);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

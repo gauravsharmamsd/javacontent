@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Overload {
+	
+	
+
+	
+	 static void validate(int age)
+	{ if (age>18)
+	{ System.out.println("eligible for mrg");
+	}
+	else
+	{ throw new ArithmeticException("not eligible for marriage");
+	}
+	}
+	public static void main(String[] args) 
+	{ Scanner s=new Scanner(System.in);
+	System.out.println("please enter your age ");
+int age = s.nextInt();
+	validate(age);
+	System.out.println("rest of the code");
+	}
+	
+}
+
+	
+	
+	

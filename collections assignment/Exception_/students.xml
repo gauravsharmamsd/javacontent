@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<college>
+<student>
+<firstname>rahul</firstname>
+<lastname>kaushik</lastname>
+<rollno>10</rollno>
+</student>
+<student>
+<firstname>gaurav</firstname>
+<lastname>maahi</lastname>
+<rollno>15</rollno>
+</student>
+</college>
+   

@@ -1,0 +1,25 @@
+
+public class Copy {
+int a= 5;
+Copy(int a){
+	this.a=a;
+	//System.out.print("bcknkca");
+}
+Copy(Copy s){
+	a=s.a;
+}
+public void  ma()
+{
+	System.out.print("kxhkhxl");
+}
+
+
+
+	public static void main(String args[]) {
+		Copy c= new Copy(5);
+		Copy c1=new Copy(c);
+		c.ma();
+		c1.ma();
+	}
+
+}

@@ -1,0 +1,46 @@
+import java.util.*;
+public class SearchAndDelete {
+static Scanner sc =new Scanner(System.in);
+static int index;
+static int size=sc.nextInt();
+static int arr[]=new int[size];
+	public static void main(String[] args) {
+		SearchAndDelete s=new SearchAndDelete();
+		
+        
+    
+       
+        for(int i=0;i<size;i++) {
+        	arr[i]=sc.nextInt();
+        }
+        for(int array:arr) {
+        	System.out.print(array+" ");
+        }
+        System.out.println();
+        System.out.println("enter array element to be search");
+        int element=sc.nextInt();
+    index = s.search(element);
+        s.delete(element);
+	}
+	private void delete(int element) {
+	for(int i=index;i<arr.length-1;i++) {
+		arr[i]=arr[i+1];
+
+	}
+	for(int i=0;i<arr.length;i++) {
+		System.out.println(arr);
+	}
+	
+		
+	}
+	private int search(int element) {
+		for(int i=0;i<arr.length;i++) {
+			if(element==arr[i])
+				System.out.println(i);
+			return i;
+		}
+		return -1;
+		
+	}
+ 
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.text.quicksearch.internal.ui.QuickSearchDialog.DIALOG_SETTINGS">
+		<item key="LAST_QUERY" value=""/>
+		<item key="PATH_FILTER" value=""/>
+		<item key="CASE_SENSITIVE" value="true"/>
+		<item key="KEEP_OPEN" value="false"/>
+		<list key="COLUMN_WIDTHS">
+			<item value="40"/>
+			<item value="400"/>
+			<item value="118"/>
+		</list>
+		<list key="SASH_WEIGHTS">
+			<item value="714"/>
+			<item value="285"/>
+		</list>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="391"/>
+			<item key="DIALOG_Y_ORIGIN" value="39"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="500"/>
+		<item key="DIALOG_HEIGHT" value="389"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="BUILD_NOW" value="true"/>
+		<item key="BUILD_ALL" value="false"/>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\workspace-spring-tool-suite-4-4.13.1.RELEASE\DoOrDie\bin\com"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\JdbcTemplate\Project_Nice_Day2_25_JDBC-JdbcTemplate-SimpleTypes_ToDo"/>
+			<item value="E:\workspace-spring-tool-suite-4-4.13.1.RELEASE\DoOrDie"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\worldline_11_Servlet_Project\WorldLine_Hello_Servlet"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\SpringProject_9_AOP_DynamicProxy\WorldLine_AOP_NoSpring"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\FileFormat (3)\ExhibitMonitorProject1"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\ExhibitMonitorProject (1)"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\FileFormat (2)\ExhibitMonitorProject"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\FileFormat (1)\ExhibitMonitorProject"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\FileFormat\ExhibitMonitorProject"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\ExhibitMonitorProject (1)\ExhibitMonitorProject"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\ExhibitMonitor\ExhibitMonitorProject"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\AssesmentFile\Assesment1"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\Assignment1-20220114T062301Z-001"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\JDBC_Layered\MyJDBCProject"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\TestingJDBC\TestingJDBC"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\ObjectSerialization\FileIOProject"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\ObjectSerialization"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\FileTryThread"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\DebugProject_12"/>
+			<item value="C:\Users\Kapil Kaushik\Downloads\DebugProject_11"/>
+			<item value="C:\deb\HomeAssignMent2_1\SportsEventSchedular"/>
+			<item value="C:\deb\HomeAssignMent2_1"/>
+			<item value="C:\Debugging\HomeAssignMent2 (1)\SportsEventSchedular"/>
+			<item value="C:\Debugging\HomeAssignMent2 (1)\SportsEventSchedular\src"/>
+			<item value="C:\Debugging\HomeAssignMent2_1 (1)"/>
+			<item value="C:\Debugging"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="429"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="580"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="375"/>
+		<item key="DIALOG_Y_ORIGIN" value="185"/>
+	</section>
+</section>

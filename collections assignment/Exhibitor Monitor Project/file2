@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer name="hg">
+    <add pin="111" city="g"/>
+    <order_value>8</order_value>
+    <lt/>
+    <file>yt.txt</file>
+</customer>

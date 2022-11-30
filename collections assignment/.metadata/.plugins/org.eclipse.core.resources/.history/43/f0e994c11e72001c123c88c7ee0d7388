@@ -1,0 +1,38 @@
+import java.util.Objects;
+
+public class Game {
+	private String gname;
+	private int nop;
+	public String getGname() {
+		return gname;
+	}
+	public void setGname(String gname) {
+		this.gname = gname;
+	}
+	public int getNop() {
+		return nop;
+	}
+	public void setNop(int nop) {
+		this.nop = nop;
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(gname, nop);
+	}
+
+	public boolean equals(Object obj) {
+	
+		Game other = (Game) obj;
+		return Objects.equals(gname, other.gname) ;
+	}
+	public Game(String gname,int nop) {
+		super();
+		this.gname = gname;
+		this.nop = nop;
+	}
+	@Override
+	public String toString() {
+		return "Game [gname=" + gname + ", nop=" + nop + "]";
+	}
+	
+}

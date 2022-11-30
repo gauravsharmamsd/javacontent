@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class One{
+	static Scanner sc =new Scanner(System.in);
+	public static void main(String args[]) {
+		Employee emp[] =new Employee[3];
+		for(int i=0;i<3;i++) {
+			Employee ee=new Employee();
+			String city =sc.next();
+			ee.setCity(city);
+			String name =sc.next();
+			ee.setEname(name);
+			int pin =sc.nextInt();
+			ee.setEid(pin);
+			emp[i]=ee;
+		}
+		printDetails1(emp);
+		
+		
+	}
+	private static void printDetails(Employee[] emp) {
+		for(int i=0;i<emp.length;i++) {
+			System.out.println(emp[i]);
+		}
+	}
+	private static void printDetails1(Employee[] emp) {
+		for(Employee ee:emp) {
+			System.out.println(ee);
+		}
+	}
+}

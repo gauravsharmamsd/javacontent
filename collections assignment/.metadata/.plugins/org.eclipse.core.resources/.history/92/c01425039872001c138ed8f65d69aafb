@@ -1,0 +1,31 @@
+package Copy;
+
+public class Main {
+	static Scheduler s=new Scheduler();
+	static UserInput u=new UserInput();
+	static Display d=new Display();
+	
+	public static void main(String[] args) {
+		
+		while (true) {
+			System.out.println("Enter 1 to add game");
+			int a =u.getInt();
+			switch(a) {
+			case 1: addGames();
+			System.out.println("Details as   "+s.game);
+			break;
+			default : System.out.println("Such not a no");
+			}
+			
+		}
+
+	}
+
+	private static  void addGames() {
+		int nop=u.getInt();
+		String gameName=u.getString();
+		s.addGame( gameName, nop);
+	
+	}
+
+}

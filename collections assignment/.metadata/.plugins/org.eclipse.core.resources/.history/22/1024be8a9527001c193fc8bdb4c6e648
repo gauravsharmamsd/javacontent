@@ -1,0 +1,20 @@
+package com.ss;
+
+public class Testc {
+	private int  Sid;
+	//private String Sname;
+	//get ,method]
+	public int getSid() {
+		return Sid;
+		public void setSid(int Sid) {
+			this.Sid=Sid;
+		
+		}
+		public static void main(String args[]) {
+			Testc t=new Testc();
+		
+	t.setSid(10);
+		System.out.println(t.getSid());
+	}
+	
+}

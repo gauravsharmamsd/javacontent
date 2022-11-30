@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Main {
+	static Scanner sc =new Scanner(System.in);
+	public static void main(String[] args) {
+	Storage s=new Storage();
+	System.out.println("Enter the number");
+	while (true) {
+	
+	int x =sc.nextInt();
+	switch(x) {
+	case 1: s.addGames();
+	case 2:  try {
+			s.Sort();
+		} catch (EmptyException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	default: System.out.println("invalid");
+	}
+}}}

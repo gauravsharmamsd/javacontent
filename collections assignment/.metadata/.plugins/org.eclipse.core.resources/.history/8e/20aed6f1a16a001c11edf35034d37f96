@@ -1,0 +1,11 @@
+package Test;
+
+public class ObjectProducer {
+
+	public static Test getObj(String s) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+		Test t = (Test)Class.forName(s).newInstance();
+		System.out.println(t.getClass().getName());
+		return t;
+	}
+
+}

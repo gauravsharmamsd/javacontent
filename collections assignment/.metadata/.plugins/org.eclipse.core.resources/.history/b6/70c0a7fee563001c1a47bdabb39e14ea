@@ -1,0 +1,24 @@
+
+public class One {
+	static Employee[]e=new Employee[100];
+	static int count;
+	static Employee emp= new Employee();
+	static Employee emp1= new Employee();
+	
+public static void main(String args[]) {
+	emp.setCity("Gzb");
+	emp.setEid(10);
+	emp.setEname(null);
+	
+	e[count+1]=emp;
+	
+	emp1.setCity("Gzb");
+	emp1.setEid(10);
+	emp1.setEname(null);
+	
+	e[count+1]=emp1;
+	
+	System.out.println(emp);
+	for(Employee e: emp)
+	}
+}

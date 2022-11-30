@@ -1,0 +1,63 @@
+
+public class Bank {
+Account[] acc=new Account[10];
+static int count;
+	public void openAccount(String acname, int accBal) throws InsufficientAmountException {
+		if(accBal<1000)
+			throw new InsufficientAmountException("account balance >1000");
+		int accno=count+1;
+	Account at=	new Account ();
+	at.setName(acname);
+
+	at.setAccno(accno);
+	at.setBalance(accBal);
+		acc[count++]=at;
+	System.out.println("Congratulation mate ur account has been opened  "+at);
+		
+	}
+	private int searchAcct(int accno) {
+		for(int i=0;i<count;i++) {
+			if(acc[i] == null) break;
+			if(accno == acc[i].getAccno())
+				return i;
+		}
+		return -1;
+	}public void closeAccount(int accNo) throws InvalidAccountException {
+		int accFound =searchAcct(accNo);
+		if(accFound <0)
+			throw new InvalidAccountException("Account No is not found,Please check your Account No.");
+		Account a = AccountDetails(accNo);
+		acc[accFound]=null;
+		//return accFound;
+	}
+	public Account AccountDetails(int accnoo) throws InvalidAccountException {
+	if(accnoo<0)
+		throw new InvalidAccountException("sorry");
+		for(int i=0;i<count;i++) {
+			if(accnoo==acc[i].getAccno())
+			System.out.println(acc[i]);
+		}
+		return null;
+	}
+	public int deposit(int amount,int accno) throws InvalidAccountException {	
+		int accFound =searchAcct(accno);
+		if (accFound<0)
+			throw new InvalidAccountException("Account not found,Please check your Account No.");
+		int oldbalance = acc[accFound].getBalance();
+		acc[accFound].setBalance(oldbalance + amount);
+		return acc[accFound].getBalance() ;
+	}
+	//Withdraw
+	public int withdraw(int amount,int accno) throws InvalidAccountException, InsufficientAmountException {	
+		int accFound =searchAcct(accno);
+		if (accFound<0)
+			throw new InvalidAccountException("Account not found,Please check your Account No.");
+		int oldbalance = acc[accFound].getBalance();
+		if(oldbalance < amount){
+			throw new InsufficientAmountException("No sufficient balance to withdraw amount.");
+		}
+		acc[accFound].setBalance(oldbalance - amount);
+		return acc[accFound].getBalance() ;
+	}
+	
+}

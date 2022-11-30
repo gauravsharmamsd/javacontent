@@ -1,0 +1,13 @@
+package com.ss;
+
+public class Testc {
+	
+	 public static void main(String[] args)
+	{ System.out.println("ratan"+"anu");
+	System.out.println(10+20+"ratan"+"durga");
+	System.out.println(10+"ratan"+20+"durga");
+	System.out.println(10+"ratan"+3*10/2+"durga");
+	
+	}
+	
+}

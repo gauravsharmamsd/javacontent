@@ -1,0 +1,15 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Set<Game> set=new HashSet<Game>();
+		set.add(new Game("Cricket",1));
+		set.add(new Game("Cricket",4));
+		set.add(new Game("Cricket",5));
+        System.out.println(set);
+	}
+	
+
+}

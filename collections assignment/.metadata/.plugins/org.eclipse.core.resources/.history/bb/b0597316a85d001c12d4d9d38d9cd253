@@ -1,0 +1,56 @@
+package StudentInfo;
+
+public class Student {
+private String fnmae;
+private String lnmae;
+private int pin;
+private int roll;
+
+public Student() {
+	super();
+}
+
+public Student(String fnmae, String lnmae, int pin, int roll) {
+	super();
+	this.fnmae = fnmae;
+	this.lnmae = lnmae;
+	this.pin = pin;
+	this.roll = roll;
+}
+
+public String getFnmae() {
+	return fnmae;
+}
+
+public void setFnmae(String fnmae) {
+	this.fnmae = fnmae;
+}
+
+public String getLnmae() {
+	return lnmae;
+}
+
+public void setLnmae(String lnmae) {
+	this.lnmae = lnmae;
+}
+
+public int getPin() {
+	return pin;
+}
+
+public void setPin(int pin) {
+	this.pin = pin;
+}
+
+public int getRoll() {
+	return roll;
+}
+
+public void setRoll(int roll) {
+	this.roll = roll;
+}
+public String toString() {
+	return "Student [fname=" + fnmae + ", lname=" + lnmae + ", roll=" + roll + ", pin=" + pin + "]";
+}
+    
+}

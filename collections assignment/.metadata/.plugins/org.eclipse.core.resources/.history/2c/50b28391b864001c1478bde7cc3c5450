@@ -1,0 +1,16 @@
+
+public class Bank {
+	Account[] account=new Account[10];
+	Account ac=new Account();
+static int z;
+public static void main(String args[]) {
+	public void openAccount(int amount, String name) {
+			int AccountNo=z+1;
+	int AccountNo1=ac.setAcno(AccountNo1);
+			ac.Account(amount,name,AccountNo1);
+	}
+	
+	}
+
+
+}

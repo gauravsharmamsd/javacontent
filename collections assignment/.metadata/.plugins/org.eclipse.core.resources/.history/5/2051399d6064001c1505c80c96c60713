@@ -1,0 +1,57 @@
+
+public class Bank {
+Account[] acc=new Account[10];
+static int count;
+	public void openAccount(String acname, int accBal) throws InsufficientAmountException {
+		if(accBal<1000)
+			throw new InsufficientAmountException("account balance >1000");
+		int accno=count+1;
+	Account at=	new Account ();
+	at.setName(acname);
+
+	at.setAccno(accno);
+	at.setBalance(accBal);
+		acc[count++]=at;
+	System.out.println("Congratulation mate ur account has been opened  "+at);
+		
+	}
+	public void closeAccount(int accno) throws InvalidAccountException {
+		int index=search(accno);
+		System.out.println(accno);
+	if(index<0)
+			throw new InvalidAccountException("Soory the req isv not valid");
+	for(int i=index;i<count;i++)
+	{
+		acc[i]=acc[i+1];
+	}
+
+for(int i=0;i<count-1;i++) {
+	System.out.println(acc[i]);
+}
+
+	}
+	private int search(int accno) throws InvalidAccountException {
+		for(int i=0;i<count;i++) {
+			if(acc==null)
+				throw new InvalidAccountException("Soory the req isv not valid");
+             if(accno==acc[i].getAccno())
+		return i;
+		}
+		return -1;
+	}
+	public void printDetails(int accno) throws InvalidAccountException {
+		if(accno<0)
+			throw new InvalidAccountException("Account no is not ,matchrd");
+		int index =search(accno);
+		if(acc[index].getAccno()!=accno)
+			throw new InvalidAccountException("Account no is not ,matchrd");
+//for(Account accn:acc )
+//	System.out.println(accn);
+//	
+		for(int i=0;i<count;i++) {
+			System.out.println(acc[i]);
+		}
+		
+	}
+
+}

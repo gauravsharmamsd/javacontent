@@ -1,0 +1,23 @@
+package Day1;
+import java.util.Scanner;
+import java.lang.reflect.InvocationTargetException;
+import java.util.*;
+public class dynamic_loading {
+	
+	
+	public static void main(String args[]) throws InstantiationException, IllegalAccessException, ClassNotFoundException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException{
+		String path="acv";
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter class name");
+	String someClassName=sc.nextLine();
+	
+	Class c= Class.forName(path+" " +someClassName);
+	
+	Object obj=c.newInstance();
+	((Animal)obj).run();
+	
+	}}
+
+
+
+

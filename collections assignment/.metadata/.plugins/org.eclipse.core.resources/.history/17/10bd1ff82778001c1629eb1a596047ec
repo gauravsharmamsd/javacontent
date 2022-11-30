@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ListToadd {
+	
+static Scanner sc =new Scanner(System.in);
+	List<Customer> al=new ArrayList<Customer>();
+	JAXBXMLHandler j=new JAXBXMLHandler();
+	while(true) {
+	System.out.println("Enter pin");
+	int pin=sc.nextInt();
+	System.out.println("Enter city");
+	String city =sc.next();
+	Address add1=new Address(pin,city);
+	System.out.println("Enter name");
+	String name=sc.next();
+	System.out.println("Enter order value");
+	int order_val=sc.nextInt();
+			Customer c1=new Customer(name,add1,order_val);
+	al.add(c1);
+  	WriteFile.writeFile(al);
+	ReadFile.readFile("File.txt");
+	JAXBXMLHandler.marshal(c1);
+	System.out.println("prss y ?n to add  more");
+	String y=sc.next();
+	if(y.equals("n")) {
+		break;
+	
+	}
+
+}

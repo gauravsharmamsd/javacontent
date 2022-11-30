@@ -1,0 +1,21 @@
+
+public class Bank {
+Account ac[]=new Account[5];
+static int z;
+public void openAccount(int accid, String name, String city) {
+	int AccNo=z++;
+  Account acp =new Account(accid,name,city);
+	System.out.println("Your Generated Accoun no is:"+acp.setAccno(AccNo));
+	ac[z+1]=acp;
+	System.out.println(acp);
+	printDetails(ac);
+	
+}
+private void printDetails(Account[] ac2) {
+	for(int i=0;i<z;i++) {
+		System.out.println(ac2[i]);
+	}
+	
+}
+
+}

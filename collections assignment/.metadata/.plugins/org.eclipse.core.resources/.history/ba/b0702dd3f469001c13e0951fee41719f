@@ -1,0 +1,29 @@
+
+
+import java.lang.annotation.Annotation;
+
+public class Coach implements Sports {
+private Sports sport;
+	public Coach(Sports sport) {
+		this.sport=sport;
+	}
+
+@Override
+public void Play()  {
+	Class c = sport.getClass();
+	//System.out.println(c);
+	try {
+		Annotation annotation = c.getDeclaredMethod("Play", null).getDeclaredAnnotation(Draw.class);
+		if(annotation != null) {
+			System.out.println("Entering method withdraw of "+sport.getClass().getName());
+		}
+		sport.Play();
+		this.Play();
+	} catch (NoSuchMethodException | SecurityException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+//	return 0;
+}
+
+}

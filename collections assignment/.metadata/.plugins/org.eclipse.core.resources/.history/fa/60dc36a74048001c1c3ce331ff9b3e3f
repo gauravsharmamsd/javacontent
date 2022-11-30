@@ -1,0 +1,19 @@
+
+public class Animal {
+	void A() {
+		System.out.println("Abc");
+	}
+public class dog extends Animal{
+	void B() {
+		System.out.println("kjhk");
+	}
+}
+	public static void main(String[] args) {
+		Animal a =new Animal();
+		a.A();
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

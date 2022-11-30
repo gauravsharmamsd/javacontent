@@ -1,0 +1,21 @@
+import java.io.File;
+
+import javax.xml.bind.*;
+
+public class JAX {
+	 public static void marshal(Student s) throws JAXBException {
+	            	    	//Cretae jaxbcontent object
+			JAXBContext context =JAXBContext.newInstance(Student.class);
+			//create Marshaller object using jaxcontent object
+			    		Marshaller marshaller=	context.createMarshaller();
+			    		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+			    		marshaller.marshal(s, System.out);
+			//call marshall from marshaller
+		File file=new File("emp1.xml");
+		marshaller.marshal(s, file);
+
+		
+			
+		}
+
+}

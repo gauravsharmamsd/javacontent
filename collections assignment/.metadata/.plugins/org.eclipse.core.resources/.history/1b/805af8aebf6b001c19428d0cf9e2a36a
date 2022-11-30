@@ -1,0 +1,22 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+Student s=new Student();
+Address add=new Address();
+add.setCity("Dhaulana");
+add.setPin(245301);
+add.setState("UP");
+
+s.setSid(21);
+s.setSname("Mahhi");
+s.setSxp(12);
+s.setAdd(add);
+
+System.out.println(s);
+
+JAX.createMarsheller(s);
+
+	}
+
+}

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Matrix {
+	
+	static void  entryMatrixData(Scanner sc,int[][] mat,int p,int q){
+		 for(int i=0;i<p;i++) {
+			 for(int j=0;j<q;j++) {
+				 mat[i][j]=sc.nextInt();
+			 }
+		 }
+	 }
+	static void printData(int[][] mat,int p,int q){
+					 for(int i=0;i<p;i++) {
+				 for(int j=0;j<q;j++) {
+					 System.out.println(mat[i][j]+"\t");
+				 }
+	}
+		 
+	}
+	/*Java Program to add two matrix*/
+	
+	
+	    public static void main(String[] args) 
+	    {
+	        int p, q;    //Declare matrix size
+	        Scanner sc = new Scanner(System.in);
+	        System.out.print("Enter the number of rows in the first matrix:");
+	        p = sc.nextInt();    //Initialize first matrix size
+	        System.out.print("Enter the number of columns in the first matrix:");
+	        q = sc.nextInt();   //Initialize first matrix size
+	        int Mat[] []=new int [p][q];
+	        entryMatrixData(sc,Mat,p,q);
+	        printData(Mat,p,q);
+}
+}

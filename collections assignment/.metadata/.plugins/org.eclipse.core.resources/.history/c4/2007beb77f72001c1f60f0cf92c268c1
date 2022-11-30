@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Main {
+	static Scanner sc =new Scanner(System.in);
+	public static void main(String[] args) {
+	Storage s=new Storage();
+
+	while (true) {
+	System.out.println("Enter the number");
+	int x =sc.nextInt();
+	switch(x) {
+	case 1: s.addGames();
+	case 2:  s.Sort();
+	default: System.out.println("Wrong choice");
+	}
+}}}

@@ -1,0 +1,78 @@
+
+public class Bank {
+Account[] acc=new Account[10];
+static int count;
+	public void openAccount(String acname, int accBal) throws InsufficientAmountException {
+		if(accBal<1000)
+			throw new InsufficientAmountException("account balance >1000");
+		int accno=count+1;
+	Account at=	new Account ();
+	at.setName(acname);
+
+	at.setAccno(accno);
+	at.setBalance(accBal);
+		acc[count++]=at;
+	System.out.println("Congratulation mate ur account has been opened  "+at);
+		
+	}
+	public void closeAccount(int accno) throws InvalidAccountException {
+		int index=search(accno);
+		System.out.println(accno);
+	if(index<0)
+			throw new InvalidAccountException("Soory the req isv not valid");
+	printDetails(accno);
+
+	}
+	private int search(int accno) throws InvalidAccountException {
+		System.out.println("ICOMING"+accno);
+		for(int i=0;i<count;i++) {
+			if(acc[i]==null)
+				throw new InvalidAccountException("Soory the req isv not valid");
+			else if(accno==acc[i].getAccno())
+            	 System.out.println("secind" +acc[i].getAccno());
+             System.out.println("jhbjhs"+ accno);
+             System.out.println(i);
+		return i;
+		}
+		return -1;
+		
+//		
+//		for(int i=0;i<op;i++) {
+//			if(account[i] == null) break;
+//			if(accno == account[i].getAccno())
+//				return i;
+//		}
+//		return -1;
+//	}
+//		
+//		
+//		
+	}
+	public void printDetails(int accno) throws InvalidAccountException {
+		if(accno<0)
+			throw new InvalidAccountException("Account no is not ,matchrd");
+		int index =search(accno);
+		System.out.println(index);
+		if(acc[index].getAccno()!=accno)
+		throw new InvalidAccountException("Account no is not ,matchrd");
+		for(int i=0;i<count;i++)
+		{
+			//if(i==index)
+			System.out.println(acc[index]);
+		}
+//
+//	for(int i=0;i<count-1;i++) {
+//		System.out.println(acc[i]);
+//	}
+////for(Account accn:acc )
+////	System.out.println(accn);
+////	
+//		for(int i=0;i<count-1;i++) {
+//			if(acc==null)
+//				throw new InvalidAccountException("sorry");
+//			System.out.println(acc[index]);
+//		}
+//		
+//	}
+
+}}

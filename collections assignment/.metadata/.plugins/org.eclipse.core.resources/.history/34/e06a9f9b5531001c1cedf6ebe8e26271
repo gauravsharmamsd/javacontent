@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class FRE {
+	
+	int n;
+
+
+static	void getData() {
+		Scanner sc = new Scanner(System.in);
+	int n= sc.nextInt();int[] arr=new int[n];
+		for(int i=0;i<n;i++) {
+			arr[i]=sc.nextInt();
+			
+		}
+	}
+static	void Count() {
+		int count=0;
+		for(int j=0;j<=n;j++) {
+			if(arr[j]==n)
+				count++;
+		}
+		System.out.println(count);
+	}
+	public static void main(String args[]) {
+		getData();
+		Count();
+		
+	}
+}
+	

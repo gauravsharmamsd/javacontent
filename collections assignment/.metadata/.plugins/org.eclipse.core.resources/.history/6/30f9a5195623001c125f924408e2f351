@@ -1,0 +1,23 @@
+package arraylist;
+
+import java.util.Scanner;
+
+public class arm {
+public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the no");
+	int n=sc.nextInt();
+int res=arm.fact(n);
+	System.out.println(res);
+			
+}
+
+static int fact(int n) {
+	int i;
+	for(i=1;i<n;i++) {
+		int fac=n*i;
+		return fac;
+	}
+
+}
+}

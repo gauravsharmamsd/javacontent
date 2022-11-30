@@ -1,0 +1,16 @@
+package Copy;
+
+public class Display {
+	static Scheduler s=new Scheduler();
+    static UserInput u=new UserInput();
+	while (true) {
+		System.out.println("Enter 1 to display game");
+		int a =u.getInt();
+		switch(a) {
+		case 1:
+		System.out.println("Details as   "+s.game);
+		break;
+		default : System.out.println("Such not a no");
+		}
+	}
+}}

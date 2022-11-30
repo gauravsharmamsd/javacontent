@@ -1,0 +1,27 @@
+
+public class Bank {
+Account[] acc=new Account[10];
+static int count;
+	public void openAccount(String acname, int accBal) throws InsufficientAmountException {
+		if(accBal<1000)
+			throw new InsufficientAmountException("account balance >1000");
+		int accno=count+1;
+	Account at=	new Account ();
+	at.setName(acname);
+
+	at.setAccno(accno);
+	at.setBalance(accBal);
+		acc[count++]=at;
+	System.out.println("Congratulation mate ur account has been opened  "+at);
+		
+	}
+	public void closeAccount(int accno) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void AccountDetails(int accnoo) {
+		for(int i=0;i<count;i++) {
+			System.out.println(acc[i]);
+		}
+	}
+}

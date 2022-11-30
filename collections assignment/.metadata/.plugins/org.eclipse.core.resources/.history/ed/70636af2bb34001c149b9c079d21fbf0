@@ -1,0 +1,13 @@
+package Sorting_java;
+
+public class Manish_Addn {
+	public static void main(String args[]) {
+int a='A';
+char b='h';
+
+
+System.out.println(a);
+System.out.println(b);
+
+}
+}

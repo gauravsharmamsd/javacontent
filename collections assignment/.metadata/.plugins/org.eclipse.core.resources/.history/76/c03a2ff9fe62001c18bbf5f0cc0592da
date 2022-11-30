@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class UI {
+static Scanner sc =new Scanner(System.in);
+static Bank b=new Bank();
+	public static void main(String[] args) throws InsufficientBalanceException {
+		System.out.println("press 1 for account open");
+		System.out.println("press 2 for account close");
+		System.out.println("press 3 for deposit");
+		System.out.println("press 4 for Withdraw");
+		System.out.println("press 5 for print Account Details");
+		int x=sc.nextInt();
+		while(true) {
+			switch(x) {
+			case 1:
+				System.out.println("Enter name of customer");
+				String name=sc.next();
+				System.out.println("Enter minimum amount need to be deposited");
+				int basicAmount=sc.nextInt();
+				b.openAccount(name, basicAmount);
+				System.out.println(b.openAccount(name, basicAmount));
+				break;
+			case 2:
+				System.out.println("Enter account no of customer");
+				String accNo=sc.next();
+				b.closeAccount(accNo);
+			case 3: 
+				System.out.println("Enter amount to be deposited");
+				int amount=sc.nextInt();
+			//	b.deposit(amount);
+			case 4: 
+				System.out.println("Enter amount to be WithDraw");
+				int amount2=sc.nextInt();
+			//	b.deposit(amount2);
+			case 5: 
+				//b.printAccountDetails(null);
+		}
+
+	}
+	}
+}

@@ -1,0 +1,42 @@
+
+public class Bank {
+private String bname;
+private String branchCode;
+private Account[] array;
+int count=0;
+public String openAccount(String name,int basicAmount) throws InsufficientBalanceException{
+	if(basicAmount<1000)
+		throw new InsufficientBalanceException("amount cant be less than 1000");
+	Account ac=new Account(name);
+
+	ac.setName(name);
+
+	ac.setBalance(basicAmount);
+
+
+
+	String accno = generatedAccountno();
+	return ac+ accno;
+	
+}
+
+public void closeAccount(String accNo){
+	
+}
+//public void deposit(int amount) {
+//	balance=balance+amount;
+//	System.out.println(balance); 
+//}
+//public void deposit(int amount) {
+//	balance=balance-amount;
+//	System.out.println(balance);
+//}
+public void printAccountDetails(Account array[]) {
+	
+}
+private String generatedAccountno() {
+		  String accno="pnb"+count;
+	  count++;
+	return accno;
+}
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer name="k">
+    <add pin="11" city="g"/>
+    <order_value>258</order_value>
+</customer>

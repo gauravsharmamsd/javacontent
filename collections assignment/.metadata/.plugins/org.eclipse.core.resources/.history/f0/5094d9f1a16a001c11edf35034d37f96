@@ -1,0 +1,10 @@
+package Test;
+
+public class Y implements Test {
+
+	@Override
+	public void A() {
+		System.out.println("A method is printed for y");
+	}
+
+}

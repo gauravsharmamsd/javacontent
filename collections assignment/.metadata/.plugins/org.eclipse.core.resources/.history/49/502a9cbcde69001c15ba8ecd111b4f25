@@ -1,0 +1,5 @@
+package Self4;
+
+public interface Sports {
+
+}

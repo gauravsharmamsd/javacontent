@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Set<Game> set=new HashSet<Game>();
+		set.add(new Game("Cricket",1));
+		set.add(new Game("Cricket",4));
+		set.add(new Game("Cricket",1));
+       // System.out.println(set);
+	
+	List<Game>al=new ArrayList<Game>(set);
+	al.add(new Game("Cricket",11));
+//	al.addAll(set);
+	System.out.println(al);
+
+}
+}

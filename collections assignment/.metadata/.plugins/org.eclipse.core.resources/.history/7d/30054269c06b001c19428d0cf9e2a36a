@@ -1,0 +1,45 @@
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+ 
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "student")
+public class Student {
+	@XmlAttribute
+private int sid;
+private String sname;
+private int sxp;
+private Address add;
+public int getSid() {
+	return sid;
+}
+public void setSid(int sid) {
+	this.sid = sid;
+}
+public String getSname() {
+	return sname;
+}
+public void setSname(String sname) {
+	this.sname = sname;
+}
+public int getSxp() {
+	return sxp;
+}
+public void setSxp(int sxp) {
+	this.sxp = sxp;
+}
+public Address getAdd() {
+	return add;
+}
+public void setAdd(Address add) {
+	this.add = add;
+}
+@Override
+public String toString() {
+	return "Student [sid=" + sid + ", sname=" + sname + ", sxp=" + sxp + ", add=" + add + "]";
+}
+
+
+
+}

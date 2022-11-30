@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EmployeeMaster>
+    <Employee EMP_ID="2233">
+        <FIRST_NAME>Vivek</FIRST_NAME>
+        <lname>Kulkarni</lname>
+        <dept>
+            <id>1234</id>
+            <location>Pune</location>
+            <name>Design</name>
+        </dept>
+        <designation>Developer</designation>
+        <domain>Insurance Logistics Healthcare</domain>
+    </Employee>
+    <Employee EMP_ID="2233">
+        <FIRST_NAME>Vivek</FIRST_NAME>
+        <lname>Kulkarni</lname>
+        <dept>
+            <id>1234</id>
+            <location>Pune</location>
+            <name>Design</name>
+        </dept>
+        <designation>Developer</designation>
+        <domain>Insurance Logistics Healthcare</domain>
+    </Employee>
+</EmployeeMaster>

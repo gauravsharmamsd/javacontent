@@ -1,0 +1,2 @@
+Customer [name=Gaurav, add=Address [pin=111, city=Gujrat], order_value=1234, file=xyz.txt]
+Customer [name=Anil, add=Address [pin=2222, city=Shimla], order_value=5600, file=Zyx.txt]

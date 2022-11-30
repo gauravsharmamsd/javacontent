@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Student {
+
+	public static void main(String[] args) {
+		Set<Student> s=new HashSet();
+	Student  s1=new Student("A","B");
+	Student  s2=new Student("x","Y");
+	Student  s3=new Student("A","B");
+	s.add(s1);
+	s.add(s2);
+	s.add(s3);
+
+	}
+
+}

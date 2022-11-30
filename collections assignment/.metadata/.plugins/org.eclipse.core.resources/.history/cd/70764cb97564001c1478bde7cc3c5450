@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class UI {
+	static Bank b=new Bank();
+static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		while(true) {
+			int x=sc.nextInt();
+			switch(x) {
+			case 1:
+				System.out.println("Enter account balance");
+				int accBal=sc.nextInt();
+				System.out.println("Enter name of account holder");
+				String acname=sc.next();
+				try {
+					b.openAccount(acname,accBal);
+				} catch (InsufficientAmountException e) {
+					e.printStackTrace();
+				}
+				break;
+//			case 2:
+//				System.out.println("Enter accountno that is to b closed");
+//				int accno=sc.nextInt();
+//				try {
+//					b.closeAccount(accno);
+//				} catch (InvalidAccountException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+//					break;
+			case 3:
+				System.out.println("Enter then account no that to be dispkayed");
+				int accnoo=sc.nextInt();
+				try {
+					b.AccountDetails(accnoo);
+			//	} catch (InvalidAccountException e) {
+					// TODO Auto-generated catch block
+					//e.printStackTrace();
+				//}
+				 
+				
+			}
+		}
+		
+		
+	}
+
+

@@ -1,0 +1,59 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class FileMonitor {
+	static Scanner sc =new Scanner(System.in);
+	public static void main(String[] args) throws Exception {
+		//Every 30 seconds check if files have arrived
+		
+		List<Customer> al=new ArrayList<Customer>();
+		JAXBXMLHandler j=new JAXBXMLHandler();
+		while(true) {
+		System.out.println("Enter pin");
+		int pin=sc.nextInt();
+		System.out.println("Enter city");
+		String city =sc.next();
+		Address add1=new Address(pin,city);
+		System.out.println("Enter name");
+		String name=sc.next();
+		System.out.println("Enter order value");
+		int order_val=sc.nextInt();
+				Customer c1=new Customer(name,add1,order_val);
+				
+		al.add(c1);
+//	  	WriteFile.writeFile(al);
+//		ReadFile.readFile("File.txt");
+
+		System.out.println("prss y ?n to add  more");
+		String y=sc.next();
+		if(y.equals("n")) {
+			break;
+		
+		}
+
+	
+
+		WriteFile.writeFile(al);
+		ReadFile.readFile1("FileMane.txt");
+		File  file =new File("FileMane.txt");
+		JAXBXMLHandler.marshal(file);
+		}
+	//	while(true) {
+			System.out.println("checking if new files have arrived ...");
+			File[] files = new File("C:\\Users\\Kapil Kaushik\\Downloads\\ExhibitMonitor\\ExhibitMonitorProject").listFiles();
+		    
+			
+			try {
+				Thread.sleep(30000);
+				
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+	}
+
+}

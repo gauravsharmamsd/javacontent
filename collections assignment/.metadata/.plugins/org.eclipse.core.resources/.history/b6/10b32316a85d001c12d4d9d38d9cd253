@@ -1,0 +1,60 @@
+package StudentInfo;
+
+import Day1.Student;
+
+public class Test {
+
+	public static void main(String[] args) {
+		hardCodedData();
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void hardCodedData() {
+		Student students[]=new Student[5];
+		Student s1 = new Student();
+		s1.setRoll(23);
+		
+		s1.setFnmae("Vivek");
+		
+		s1.setLnmae("Kulkarni");
+		s1.setPin(411004);
+		students[0] = s1;
+		Student s2 = new Student();
+		s2.setRoll(23);
+		
+		s2.setFnmae("Vivek");
+	
+		s2.setLnmae("Kulkarni");
+		s2.setPin(411004);
+		students[1] = s2;
+		Student s3 = new Student();
+		s3.setRoll(23);
+		
+		s3.setFnmae("Vivek");
+	
+		s3.setLnmae("Kulkarni");
+		s3.setPin(411004);
+		students[2] = s3;
+		Student s4 = new Student();
+		s4.setRoll(231);
+		
+		s4.setFnmae("VivekAnand");
+		
+		s4.setLnmae("KulkarniAnand");
+		s4.setPin(411004);
+		students[3] = s4;
+		printStudents(students);	
+	}
+
+	private static void printStudents(Student[] jgj) {
+		for(Student s: jgj) {
+			System.out.println(s);
+		}
+		
+
+		// TODO Auto-generated method stub
+		
+	}
+
+}

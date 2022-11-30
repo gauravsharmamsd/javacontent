@@ -1,0 +1,17 @@
+/*
+ * System.out.println("_____________final_"+Integer.parseInt(words[1])); if
+ * (words.length == 0) { System.out.println("Not valid"); //this.stop(); } else
+ * {
+ * 
+ * System.out.println("_____________final_"+Integer.parseInt(words[1])); for
+ * (int i = 0; i < al.get(0).getFld().size(); i++) { if (words[0].length() >=
+ * Integer.parseInt(al.get(0).getFld().get(0).getMinlength())&&words[0].length()
+ * <= Integer.parseInt(al.get(0).getFld().get(0).getMaxlength())) {
+ * System.out.println("True________________________"); } if
+ * (Integer.parseInt(words[1])==
+ * Integer.parseInt(al.get(0).getFld().get(0).getMaxlength())) {
+ * System.out.println("True________________________"); }
+ * 
+ * else { System.out.println("Wrong________________"); } }
+ * //System.out.println("Valid " + al); }
+ */

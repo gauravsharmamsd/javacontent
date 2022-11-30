@@ -1,0 +1,1 @@
+Customer [name=fd, add=Address [pin=111, city=gf], order_value=75, file=xgh.txt]

@@ -1,0 +1,28 @@
+import java.lang.annotation.Annotation;
+
+public class Mediar implements A {
+
+
+   private A bank;
+     public Mediar(A bank){
+    	
+    	 this.bank = bank;//This could be HDFC or SBI or any other Bank
+     }
+     
+	@Override
+	public void xy()  {
+		Class c = bank.getClass();
+		try {
+			Annotation annotation = c.getMethod("xy", int.class).getDeclaredAnnotation(hideAndSeek.class);
+			if(annotation != null) {
+				System.out.println("Entering method withdraw of "+bank.getClass().getName());
+			}
+			bank.xy();
+		} catch (NoSuchMethodException | SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+//		return 0;
+	}
+
+}

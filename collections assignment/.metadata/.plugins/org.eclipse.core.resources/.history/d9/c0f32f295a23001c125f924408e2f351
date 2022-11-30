@@ -1,0 +1,25 @@
+package arraylist;
+import java.util.Scanner;
+public class fib {
+public static void main(String args[]){
+	Scanner sc =new Scanner(System.in);
+	int n=sc.nextInt();
+	int result=fib.fibonnaci(n);
+	System.out.println(result);
+}
+static int fibonnaci(int n) {
+int a=0,b=1;
+System.out.println(a+"  "+b);
+
+for(int i=1;i<n;i++) {
+	int c=a+b;
+	System.out.println(c);
+	a=b;
+	b=c;
+	return c;
+}
+	
+
+	
+}
+}

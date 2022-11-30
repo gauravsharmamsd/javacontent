@@ -1,0 +1,13 @@
+
+public class ObjectMaker  {
+
+	public static A maker(String className) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Class c=Class.forName(className);
+		A tt=(A) c.newInstance();
+		System.out.println(tt.getClass().getName());
+		Mediar m=new Mediar(tt);
+		tt.xy();
+		return tt;
+	}
+
+}

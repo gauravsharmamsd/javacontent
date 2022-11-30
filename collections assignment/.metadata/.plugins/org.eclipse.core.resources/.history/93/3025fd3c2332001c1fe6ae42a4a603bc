@@ -1,0 +1,11 @@
+public class DefaultCoinstructor {
+	public void run(){
+	System.out.print(" im running");
+}
+
+
+	   public static void main(String[] arguments) {
+		   DefaultCoinstructor  rect = new  DefaultCoinstructor ();
+rect.run();
+}
+}

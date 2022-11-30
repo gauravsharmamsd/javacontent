@@ -1,0 +1,3 @@
+aaa,Bangalore,1000
+bbb,Hyderabad,2000
+ccc,Pune,3000

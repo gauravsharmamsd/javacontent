@@ -1,0 +1,12 @@
+
+public class ObjectMaker {
+
+	public static Test maker(String className) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Class c=Class.forName(className);
+		Test tt=(Test) c.newInstance();
+		System.out.println(tt.getClass().getName());
+		
+		return null;
+	}
+
+}

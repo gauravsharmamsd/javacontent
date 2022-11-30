@@ -1,0 +1,20 @@
+package avc.aa;
+import java.util.*;
+public class gcd_lcm {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int x1=sc.nextInt();
+		int x2=sc.nextInt();
+		int gcd=0,mul=x1*x2;
+		for(int i=1;i<=x1;i++) {
+			if(x1%i==0 && x2%i==0) {
+				gcd=i;
+			}
+		}
+		System.out.println("gcd    "+   gcd);
+int lcm=mul/gcd;
+System.out.println("lcm    " +   lcm);
+	}
+
+}

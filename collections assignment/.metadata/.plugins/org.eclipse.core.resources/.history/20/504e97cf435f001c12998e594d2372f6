@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ToString {
+private static Scanner sc= new Scanner(System.in);
+	public static void main(String[] args) {
+		Student s=new Student();
+		String fname=sc.next();
+		s.setName(fname);
+		int sid=sc.nextInt();
+		s.setSid(sid);
+		System.out.println(s);
+		// TODO Auto-generated method stub
+
+	}
+
+}

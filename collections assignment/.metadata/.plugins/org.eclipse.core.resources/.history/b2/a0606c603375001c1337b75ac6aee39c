@@ -1,0 +1,18 @@
+package BankJdbc;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class Bank {
+
+	public static boolean InsertDetailsToDB(Account stud) throws SQLException {
+		PreparedStatement ps=null;
+		ConnectorClass c=new ConnectorClass();
+		
+		    String q="create table BankProspectus(Cust_id int(7) primary key auto_increment,Name varchar(12),Balance varchar(15),City(15))";
+		    ps=c.createConnection().prepareStatement(q);
+		    ps.executeUpdate(q)
+		return false;
+	}
+
+}

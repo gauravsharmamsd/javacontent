@@ -1,0 +1,45 @@
+
+public class Account {
+private String name;
+private int amount;
+
+public Account(String name, int amount) {
+	super();
+	this.name = name;
+	this.amount = amount;
+
+}
+
+public Account() {
+	// TODO Auto-generated constructor stub
+}
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public int getAmount() {
+	return amount;
+}
+
+public void setAmount(int amount) {
+	this.amount = amount;
+}
+
+
+
+
+public int setAccountNo(int Accno) {
+	return Accno;
+}
+//
+//@Override
+//public String toString() {
+//	return "Account [name=" + name + ", Amount=" + amount + "]";
+//}
+
+}

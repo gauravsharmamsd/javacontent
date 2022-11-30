@@ -1,0 +1,29 @@
+
+public class Copy {
+int eid =5;
+String ename="jhabdjkad";
+Copy(int a,String ename){
+	this.eid=a;
+	this.ename=ename;
+	//System.out.print("bcknkca");
+}
+Copy(Copy s){
+eid=	s.eid;
+ename= s.ename;
+
+}
+public void  ma()
+{
+	System.out.println("kxhkhxl");
+}
+
+
+
+	public static void main(String args[]) {
+		Copy c= new Copy(3,"kjchkajdl");
+		Copy c1=new Copy(c);
+		c.ma();
+		c1.ma();
+	}
+
+}
